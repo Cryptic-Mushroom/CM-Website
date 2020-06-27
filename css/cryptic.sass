@@ -1,0 +1,99 @@
+// HTML Customization
+
+html
+  background: #191516
+  padding: 0
+  margin: 0
+
+body
+  background: url("/assets/background.jpg") top no-repeat
+  background-size: 100%
+  padding: 0
+  margin: 0
+
+h1,h2,h3,h4,h4,h5,h6
+  color: #EDCF67
+  font-family: 'Forum', cursive
+  vertical-align: middle
+
+p,span
+  color: #EDCF67
+  font-family: 'Forum', cursive
+  vertical-align: middle
+  font-size: 110%
+
+a
+  color: #EDCF67
+  font-family: 'Forum', cursive
+  font-size: 120%
+  text-decoration: none
+  font-weight: 600
+
+a:hover
+  filter: brightness(150%)
+
+li
+  margin-right: 30px
+  margin-left: 10px
+
+hr
+  border-color: #EDCF67
+  max-width: 800px
+  margin-top: 20px
+  margin-bottom: 20px
+
+// Custom Classes
+
+.logo
+  background: url("/assets/logo-transparent.png") center center no-repeat
+  background-size: cover
+  display: inline-block
+  width: 100px
+  height: 100px
+  vertical-align: middle
+
+.navbar
+  display: flex
+  top: 0
+  left: 0
+  right: 0
+  max-width: 1280px
+  margin: 0 auto
+  justify-content: space-between
+  align-items: center
+  padding: 10px
+
+.navbar.shrink
+  height: 40px
+  transition: all ease .5s
+  background: black
+
+.navbar div:nth-child(1)
+  flex: 1
+
+.navbar li
+  text-decoration: none
+  list-style-type: none
+  display: inline
+  text-align: right
+
+.container
+  border-top-left-radius: 8px
+  border-top-right-radius: 8px
+  background: rgba(0, 0, 0, 0.9)
+  display: flex
+  flex-direction: row
+  align-items: flex-start
+  justify-content: flex-start
+  max-width: 1280px
+  padding: 20px
+  margin: 0 auto
+
+.container div:nth-child(1)
+  flex: 2
+
+// Mobile
+
+@media only screen and (max-width: 800px)
+    html
+      display: none
